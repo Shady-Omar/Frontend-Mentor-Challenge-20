@@ -1,0 +1,391 @@
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    margin: 0px;
+    width: 100%;
+    overflow-x: hidden; 
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: hsl(210, 46%, 95%);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    gap: 25px;
+    grid-template-columns: repeat(4, 1fr);;
+    grid-template-rows: 325px 325px;
+    margin: 4rem;
+    max-width: 1200px;
+    min-width: 1200px;
+}
+
+.block {
+    box-shadow: rgb(0 0 0 / 20%) -6px 6px 24px;
+    border-radius: 10px;
+}
+
+.content {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.one {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+    background-color: hsl(263, 55%, 52%);
+    position: relative;
+}
+
+.one::after {
+    content: url(images/bg-pattern-quotation.svg);
+    position: absolute;
+    top: 3%;
+    right: 10%;
+    transform: scale(1.2);
+}
+
+.one .content .image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.one .content .image::before {
+    content: "Daniel Clifford";
+    position: absolute;
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+    font-weight: 500;
+    top: 0.2rem;
+    left: 4rem;
+    width: 125px;
+}
+
+.one .content .image::after {
+    content: "Verified Graduate";
+    position: absolute;
+    color: hsl(266deg 86% 79%);
+    font-size: 16px;
+    font-weight: 500;
+    top: 1.7rem;
+    left: 4rem;
+    width: 110px;
+}
+
+.one .content .image img {
+    border-radius: 50%;
+    border: 3px solid hsl(264, 82%, 70%);;
+    width: 70%;
+}
+
+.one .content h1 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+    font-size: 22px;
+    z-index: 1;
+}
+
+.one .content p {
+    color: hsla(0, 0%, 81%, 0.7);
+    font-weight: 500;
+    width: 94%;
+    font-size: 14px;
+    line-height: 1.3rem;
+    margin-top: 5px;
+}
+
+.two {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    background-color: hsl(217, 19%, 35%);
+}
+
+.two .content .image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.two .content .image::before {
+    content: "Jonathan Walters";
+    position: absolute;
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+    font-weight: 500;
+    top: 0.2rem;
+    left: 4rem;
+    width: 125px;
+}
+
+.two .content .image::after {
+    content: "Verified Graduate";
+    position: absolute;
+    color: hsla(0, 0%, 81%, 0.7);
+    font-size: 16px;
+    font-weight: 500;
+    top: 1.7rem;
+    left: 4rem;
+    width: 110px;
+}
+
+.two .content .image img {
+    border-radius: 50%;
+    border: 3px solid hsla(0, 0%, 81%, 0.7);
+    width: 70%;
+}
+
+.two .content h1 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+    font-size: 22px;
+    z-index: 1;
+}
+
+.two .content p {
+    color: hsla(0, 0%, 81%, 0.7);
+    font-weight: 500;
+    width: 94%;
+    font-size: 14px;
+    line-height: 1.3rem;
+    margin-top: 5px;
+}
+
+.three {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.three .content .image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.three .content .image::before {
+    content: "Jeanette Harmon";
+    position: absolute;
+    color: hsl(219, 29%, 14%);
+    font-size: 18px;
+    font-weight: 500;
+    top: 0.2rem;
+    left: 4rem;
+    width: 125px;
+}
+
+.three .content .image::after {
+    content: "Verified Graduate";
+    position: absolute;
+    color: rgb(180 180 180);
+    font-size: 16px;
+    font-weight: 500;
+    top: 1.7rem;
+    left: 4rem;
+    width: 110px;
+}
+
+.three .content .image img {
+    border-radius: 50%;
+    border: 3px solid white;
+    width: 70%;
+}
+
+.three .content h1 {
+    color: hsl(219, 29%, 14%);
+    font-weight: 600;
+    font-size: 23px;
+    z-index: 1;
+}
+
+.three .content p {
+    color: hsl(217deg 19% 35% / 80%);;
+    font-weight: 600;
+    width: 94%;
+    font-size: 14px;
+    line-height: 1.3rem;
+    margin-top: 5px;
+}
+
+.four {
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 1;
+    background-color: hsl(219, 29%, 14%);
+}
+
+.four .content .image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.four .content .image::before {
+    content: "Patrick Abrams";
+    position: absolute;
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+    font-weight: 500;
+    top: 0.2rem;
+    left: 4rem;
+    width: 125px;
+}
+
+.four .content .image::after {
+    content: "Verified Graduate";
+    position: absolute;
+    color: hsla(0, 0%, 81%, 0.7);
+    font-size: 16px;
+    font-weight: 500;
+    top: 1.7rem;
+    left: 4rem;
+    width: 110px;
+}
+
+.four .content .image img {
+    border-radius: 50%;
+    border: 3px solid hsl(263, 55%, 52%);
+    width: 70%;
+}
+
+.four .content h1 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+    font-size: 22px;
+    z-index: 1;
+}
+
+.four .content p {
+    color: hsla(0, 0%, 81%, 0.7);
+    font-weight: 500;
+    width: 94%;
+    font-size: 14px;
+    line-height: 1.3rem;
+    margin-top: 5px;
+}
+
+.five {
+    grid-column: 4 / span 1;
+    grid-row: 1 / span 2;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.five .content .image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.five .content .image::before {
+    content: "Kira Whittle";
+    position: absolute;
+    color: hsl(219, 29%, 14%);
+    font-size: 18px;
+    font-weight: 500;
+    top: 0.2rem;
+    left: 4rem;
+    width: 125px;
+}
+
+.five .content .image::after {
+    content: "Verified Graduate";
+    position: absolute;
+    color: rgb(180 180 180);
+    font-size: 16px;
+    font-weight: 500;
+    top: 1.7rem;
+    left: 4rem;
+    width: 110px;
+}
+
+.five .content .image img {
+    border-radius: 50%;
+    border: 3px solid white;
+    width: 70%;
+}
+
+.five .content h1 {
+    color: hsl(219, 29%, 14%);
+    font-weight: 600;
+    font-size: 23px;
+    z-index: 1;
+}
+
+.five .content p {
+    color: hsl(217deg 19% 35% / 80%);;
+    font-weight: 600;
+    width: 94%;
+    font-size: 14px;
+    line-height: 1.3rem;
+    margin-top: 5px;
+}
+
+@media (max-width: 767px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .block {
+        width: 30%;
+        
+    }
+
+    .one::after {
+        top: 0%;
+        right: 10%;
+        transform: scale(1);
+    }
+
+    .one .content h1 {
+        font-size: 24px;
+        width: 105%;
+    }
+
+    .one .content p {
+        font-size: 0.91em;
+        line-height: 1.3rem;
+        margin-top: 5px;
+    }
+
+    .two .content h1 {
+        font-size: 23px;
+    }
+
+    .two .content p {
+        font-size: 13px;
+    }
+
+    .four .content h1 {
+        font-size: 23px;
+    }
+
+    .five .content h1 {
+        font-size: 22px;
+    }
+
+}
